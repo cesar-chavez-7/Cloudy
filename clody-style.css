@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #dbeafe, #f0f9ff);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sky {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.clouds {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.cloud:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.cloud:nth-child(1) { top: 20%; left: 10%; }
+.cloud:nth-child(2) { top: 40%; left: 50%; }
+.cloud:nth-child(3) { top: 30%; left: 75%; }
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.plant-button {
+  margin-top: 3rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #93c5fd;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plant-button:hover {
+  background-color: #60a5fa;
+}
