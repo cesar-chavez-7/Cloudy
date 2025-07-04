@@ -27,16 +27,16 @@ Cloudy busca convertirse en un espacio digital íntimo, atmosférico y colectivo
 
 ## 📂 Estructura propuesta 
 cloudy/ ├── public/ │   └── assets/        
-# Íconos, imágenes, sonidos 
+### Íconos, imágenes, sonidos 
 ├── src/ │   
 ├── components/     
 
-# Nube, Modal, Formulario 
+### Nube, Modal, Formulario 
 │   ├── pages/          
-# Inicio y posibles secciones futuras 
+### Inicio y posibles secciones futuras 
 │   └── styles/ ├── index.html ├── README.md └── package.json
 
-## 📌 Estado actual
+### 📌 Estado actual
 
 > Recién comenzando. El diseño visual es prioridad.  
 > Buscamos una experiencia inmersiva, sensible y distinta.
