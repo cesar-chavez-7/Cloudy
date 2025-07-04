@@ -25,8 +25,16 @@ Cloudy busca convertirse en un espacio digital íntimo, atmosférico y colectivo
 - Modal para leer pensamientos en detalle
 - Estética suave, introspectiva y minimalista (no caricaturesca)
 
-## 📂 Estructura propuesta
-cloudy/ ├── public/ │   └── assets/         # Íconos, imágenes, sonidos ├── src/ │   ├── components/     # Nube, Modal, Formulario │   ├── pages/          # Inicio y posibles secciones futuras │   └── styles/ ├── index.html ├── README.md └── package.json
+## 📂 Estructura propuesta 
+cloudy/ ├── public/ │   └── assets/        
+# Íconos, imágenes, sonidos 
+├── src/ │   
+├── components/     
+
+# Nube, Modal, Formulario 
+│   ├── pages/          
+# Inicio y posibles secciones futuras 
+│   └── styles/ ├── index.html ├── README.md └── package.json
 
 ## 📌 Estado actual
 
