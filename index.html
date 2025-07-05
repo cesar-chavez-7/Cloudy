@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cloudy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cloudy-style.css" />
 </head>
 <body>
@@ -11,13 +13,30 @@
     <h1 class="title">☁️ Cloudy</h1>
 
     <div class="clouds">
-      <div class="cloud" data-message="A veces, volar no es escapar.">hoverme</div>
-      <div class="cloud" data-message="Estoy intentando soltar algo.">hoverme</div>
-      <div class="cloud" data-message="Aquí estoy, pero no siempre fui yo.">hoverme</div>
+      <div class="cloud" data-message="A veces, volar no es escapar."></div>
+      <div class="cloud" data-message="Estoy intentando soltar algo."></div>
+      <div class="cloud" data-message="Aquí estoy, pero no siempre fui yo."></div>
     </div>
 
     <button class="plant-button">Plantar una nube</button>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-btn">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
   </div>
+
+  <!-- Modal para plantar una nube -->
+<div id="plant-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-plant-btn">&times;</span>
+    <h2>Plantar una nueva nube ☁️</h2>
+    <textarea id="cloud-input" placeholder="Escribe algo que quieras soltar..." rows="4"></textarea>
+    <button id="submit-cloud">Plantar</button>
+  </div>
+</div>
 
   <script src="cloudy-script.js"></script>
 </body>
